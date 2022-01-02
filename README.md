@@ -1,5 +1,7 @@
 # C# Notebooks
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krzysztofzajaczkowski/csharp-notebooks/master)
+
 ## License
 This repository is licensed under the [MIT](LICENSE) license.
 
