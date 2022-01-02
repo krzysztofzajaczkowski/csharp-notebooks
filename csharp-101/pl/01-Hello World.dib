@@ -1,0 +1,106 @@
+#!markdown
+
+# Hello World
+
+Obejrzyj pełny [odcinek serii C# 101 (w języku angielskim)](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2) dla tego modułu.
+
+## Jak pracować z tym dokumentem?
+
+Ten dokument służy do tego, żeby pomóc Ci nauczyć się programowania w języku C#. Możesz:
+- Przejść krok po kroku przez ten dokument we własnym tempie.
+- Przejść po nim w trakcie oglądania odcinka serii C# 101.
+- Użyć go do własnych eksperymentów z kodem.
+
+## Czym jest C#?
+
+C# to potężny i popularny język programowania, którego możesz użyć do tworzenia stron internetowych, gier, aplikacji mobilnych, aplikacji okienkowych, jak również do wielu innych rzeczy. C# jest częścią platformy .NET, któa zawiera biblioteki wspomagające tworzenie wspomnianych aplikacji. Naucz się C#, zacznij programować i stwórz co tylko sobie zamarzysz.
+
+## C#: Hello World
+
+Napisz swój pierwszy program w C#! Wyświetli on ciąg znaków "Hello World!" w konsoli.
+> Najedź kursorem na poniższy kod. W zależności od środowiska z jakiego korzystasz, znajdziesz ikonkę "play" po lewej stronie lub na górnym pasku narzędzi. Możesz też skorzystać ze skrótu klawiszowego "CTRL + Enter". Dzięki tym sposobom możesz uruchomić poniższy kod!
+
+#!csharp
+
+Console.WriteLine("Hello World!");
+
+#!markdown
+
+`Console.WriteLine` jest metodą, która umożliwia wyświetlenie wiadomości w okienku konsoli. W tym przypadku jako wiadomość określono "Hello World!".
+
+# Zadeklaruj i używaj zmiennych
+
+**Zmienna** to symbol, którego możesz użyć do wykonywania tych samych fragmentów kodu z innymi wartościami. Dla przykładu, możesz zadeklarować zmienną `aFriend` i użyć jej z `Console.WriteLine` żeby wyświetlił wiadomość. Tę zmienną można zadeklarować na 2 sposoby: używając typu `string` lub słowa kluczowego `var`, które automatycznie określi typ zmiennej.
+
+> Uruchom ten kod żeby zobaczyć wyświetloną wiadomość o treści **Jayme**.
+>
+> Następnie zmień imię w zmiennej i uruchom kod jeszcze raz, żeby zobaczyć zmienioną wiadomość.
+
+#!csharp
+
+var aFriend = "Jayme";
+Console.WriteLine(aFriend);
+
+#!markdown
+
+# Łączenie ciągów znaków
+
+Możliwe, że zauważyłeś - w powyższej wiadomości brakuje słowa "Hello", które było w poprzednim bloku. Można to naprawić poprzez łączenie ciągów znaków, używając `+` do stworzenia nowego łańcucha, który zostanie wypisany na konsoli.
+
+> Uruchom kod żeby wyświetlić przywitanie!
+
+#!csharp
+
+Console.WriteLine("Hello " + aFriend + "!");
+
+#!markdown
+
+# Interpolacja łańcuchów znaków
+
+W bloku wyżej użyto `+` do stworzenia nowego ciągu znaków ze **zmiennej** i **stałej**. Istnieje wygodniejsze rozwiązanie, polegające na umieszczeniu zmiennej między `{` a `}`, które mówi kompilatorowi, żeby wstawił w to miejsce wartość zmiennej. Nazywa się to **interpolacją**. Żeby umożliwić interpolację należy dodać znak `$` przed otwierającym cudzysłowem.
+
+#!csharp
+
+aFriend = "string interpolation";
+Console.WriteLine($"Hello {aFriend}!");
+
+#!markdown
+
+Udało się! Utworzyłeś pierwszą aplikacje w C# i nauczyłeś się jak jak łączyć ciągi znaków, używając interpolacji.
+
+#!markdown
+
+# Piaskownica
+
+Każdy moduł zawiera na końcu małą "piaskownicę". To miejsce na Twoje eksperymenty z własnym kodem. Spróbuj wypisać kilka słów i zmiennych. Oto kilka przykładów:
+> Wyświetl swoje ulubione motto.
+>
+> Utwórz zmienną ze swoim ulubionym jedzeniem i utwórz krótkie zdanie, wyświetlające wartość tej zmiennej.
+>
+> **Wyzwanie!**
+>
+> Stwórz swoje własne Mad Libs! Utwórz kilka zmiennych, które będą czasownikami, rzeczownikami itd., a następnie użyj ich do napisania krótkiej historii. Możesz poprosić kogoś o wybranie słów pasujących do każdej z luk, a następnie przeczytać gotowe zdania!
+
+#!csharp
+
+Console.WriteLine("Playground");
+
+#!markdown
+
+# Kontynuuj naukę
+
+Jest dużo innych źródeł, z których możesz się uczyć!
+> [Odcinek serii C# 101](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2)
+>
+> [Dokumentacja: Wstęp do C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
+
+#!markdown
+
+# Inne źródła
+
+Inne źródła, które możesz sprawdzić:
+> [Inne odcinki serii C# 101](https://dotnet.microsoft.com/learn/videos?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Microsoft Learn](https://docs.microsoft.com/learn/dotnet/?WT.mc_id=csharpnotebook-35129-website)
+>
+> [Dokumentacja C#](https://docs.microsoft.com/dotnet/csharp/?WT.mc_id=csharpnotebook-35129-website)
